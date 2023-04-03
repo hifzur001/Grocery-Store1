@@ -1,0 +1,211 @@
+*,::before,::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+img{vertical-align: bottom;}
+:disabled {cursor: not-allowed;}
+iframe{border: none;}
+button{cursor: pointer;}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.clear{clear: both;}
+.row{margin: 0 -15px;}
+.row:after{
+    content: ""; clear: both; display: block;
+}
+
+
+.row .col-1{flex-basis:8.33%;}
+.row .col-2{flex-basis:16.66%;}
+.row .col-3{flex-basis:25%;}
+.row .col-4{flex-basis:33.33%;}
+.row .col-5{flex-basis:41.66%;}
+.row .col-6{flex-basis:50%;}
+.row .col-7{flex-basis:58.33%;}
+.row .col-8{flex-basis:66.66%;}
+.row .col-9{flex-basis:75%;}
+.row .col-10{flex-basis:83.33%;}
+.row .col-11{flex-basis:91.66%;}
+.row .col-12{flex-basis:100%;}
+
+
+.row{margin: 0 -15px;
+display: flex;
+flex-flow: row;
+}
+
+button{
+    text-transform: capitalize;
+}
+
+body{
+    text-transform: capitalize;
+}
+
+
+
+.row[class^="col"]{
+    flex: 1 1 auto;
+    padding: 0 15px;
+    }
+
+    @font-face{
+        font-family: rl;
+        src: url(../font/Roboto-Light.woff);
+    }
+    
+    @font-face{
+        font-family: rm;
+        src: url(../font/Roboto-Medium.woff);
+    }
+    
+    @font-face{
+        font-family: rr;
+        src: url(../font/Roboto-Regular.woff);
+    }
+    
+    @font-face{
+        font-family: rb;
+        src: url(../font/Roboto-Bold.woff);
+    }
+    @font-face{
+        font-family: rbl;
+        src: url(../font/Roboto-Black.woff);
+    }
+    @font-face{
+        font-family: hn;
+        src: url(../font/helveticaneue.woff2);
+    }
+    @font-face{
+        font-family: hb;
+        src: url(../font/helveticaneue-bold.woff2);
+    }
+    @font-face{
+        font-family: gv;
+        src: url(../font/Great\ Vibes.woff2);
+    }
+
+ 
+    
+
+.rl{ font-family: rl, sans-serif; }
+.rb{ font-family: rb, sans-serif; }
+.rm{ font-family: rm, sans-serif; }
+.rr{ font-family: rr, sans-serif; }
+.rbl{ font-family: rbl, sans-serif; }
+.hn{ font-family: hn, sans-serif; }
+.hb{ font-family: hb, sans-serif; }
+.gv{ font-family: gv, sans-serif; }
+
+/* Layout */
+
+.flex-1{ background: rgb(0, 0, 0); color: rgb(255, 255, 255); height: 100px; position: sticky; top: 0; height: 4.5em;  z-index: 1; }
+.flex-1 h1 a{ color: #fff; position: fixed; top: 0.1em; text-decoration: none; }
+.flex-1 h1 a p{display: inline; color: #fff; }
+.flex-1 p{ transform: translate(25%); margin-top: 2.5em; }
+.flex-1 nav ul{display: flex; justify-content: space-between; list-style-type: none; align-items: center;}
+.flex-1 nav ul li{margin: 2em 0;}
+.flex-1 nav ul li a{color: #fff; position: fixed; top: 1.5em; text-decoration: none;} 
+.flex-1 nav ul li a:hover{color: rgb(46, 220, 206);} 
+.flex-1 nav ul li a::after{content: ''; display: block; height: 0.20em; width: 0; background: rgba(255, 0, 0, 0.73); transition: all 0.5s;}
+.flex-1 nav ul li a:hover::after{width: 100%;}
+
+.flex-6{ height: 88em; }
+.flex-6 h2{ text-align: center; text-transform: uppercase; margin-top: 2em; }
+.flex-6 .line{ border: 1px solid #ededed; height: 1px; background: #e7e7e7; border-radius: 12px; margin-top: -15px; }
+.flex-6 .btn{ background: linear-gradient(to right, #fd44e5, #1416c3); width: 340px; height: 50px; border: none; font-size: 1.3rem; color: #fff; cursor: pointer; border-radius: 25px 0; position: relative; transition: all .6s; left: 21.6em; top: 0.3em;}
+.flex-6 .btn:hover{ border-radius: 0 25px;}
+.flex-6 .btn::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #240b36, #ff9fe1); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9,0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s;}
+.flex-6 .btn:hover::before{ opacity: 1;}
+.flex-6 .btns{ background: linear-gradient(to right, rgb(88, 9, 88), #47a3c2); width: 195px; height: 50px; border: none; font-size: 1.2em; color: #fff; cursor: pointer; border-radius: 25px 0; position: relative; transition: all .6s; top: 3em; }
+.flex-6 .active{ background: linear-gradient(to right, #4df8f2, #f11a21); width: 195px; height: 50px; border: none; font-size: 1.2em; color: #fff; cursor: pointer; border-radius: 25px 0; position: relative; transition: all .6s; top: 3em; }
+.flex-6 .btns:hover{ border-radius: 0 25px;}
+.flex-6 .btns::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #240b36, #ff9fe1); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9,0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s;}
+.flex-6 .btns:hover::before{ opacity: 1;}
+.flex-6 .op{ border-radius: 18px; width: 270px; height: 490px; background: #e0e0e0; box-shadow:  22px 22px 58px #9d4f4f, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .ok{ border-radius: 18px; width: 270px; height: 490px; background: #e0e0e0; box-shadow:  22px 22px 58px #9d4f4f, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .ol{ border-radius: 18px; width: 270px; height: 490px; background: #e0e0e0; box-shadow:  22px 22px 58px #9d4f4f, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .on{ border-radius: 18px; width: 270px; height: 490px; background: #e0e0e0; box-shadow:  22px 22px 58px #9d4f4f, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .pp{ border-radius: 18px; width: 270px; height: 493px; background: #e0e0e0; box-shadow:  22px 22px 58px #303, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .pk{ border-radius: 18px; width: 270px; height: 493px; background: #e0e0e0; box-shadow:  22px 22px 58px #303, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .pl{ border-radius: 18px; width: 270px; height: 493px; background: #e0e0e0; box-shadow:  22px 22px 58px #303, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .pn{ border-radius: 18px; width: 270px; height: 493px; background: #e0e0e0; box-shadow:  22px 22px 58px #303, -22px -22px 58px #ffffff; text-align: center; margin-top: 8em; margin-left: 1em; }
+.flex-6 .ol img{ width: 95%; padding: 3em 0;  display: flex; justify-content: center; align-items: center;}
+.flex-6 .op img{ width: 100%; padding: 3em 0; display: flex; justify-content: center; align-items: center; }
+.flex-6 .ok img{ width: 100%; padding: 3em 0; display: flex; justify-content: center; align-items: center; }
+.flex-6 .on img{ width: 95%; padding: 4em 0; display: flex; justify-content: center; align-items: center; }
+.flex-6 .pl img{ width: 95%; padding: 5em 0; padding-left: 1em; display: flex; justify-content: center; align-items: center; }
+.flex-6 .pp img{ width: 95%; padding: 3em 0; padding-left: 1em; display: flex; justify-content: center; align-items: center; }
+.flex-6 .pk img{ width: 95%; padding: 6em 0; padding-left: 1em; display: flex; justify-content: center; align-items: center; }
+.flex-6 .pn img{ width: 95%; padding: 4em 0; padding-left: 14px; display: flex; justify-content: center; align-items: center; }
+.flex-6 .icon{ font-size: 1.4em; display: flex; align-items: center;  margin-left: 1.5em; margin-top: -1em; }
+.flex-6 .vel{ font-size: 1.4em; display: flex; align-items: center; margin-left: 1.5em; margin-top: 1em; }
+.flex-6 .balance{ font-size: 1.4em; display: flex; align-items: center; margin-left: 3em; margin-top: 1.5em; }
+.flex-6 .being{ font-size: 1.4em; display: flex; align-items: center; margin-left: 0.46em; margin-top: 1.5em; }
+.flex-6 .blog{ font-size: 1.4em; display: flex; align-items: center; margin-left: 3em; margin-top: -2em; }
+.flex-6 .body{ font-size: 1.4em; display: flex; align-items: center; margin-left: 3em; margin-top: -1.05em; }
+.flex-6 .can{ font-size: 1.4em; display: flex; align-items: center; margin-left: 1em; margin-top: -0.45em; }
+.flex-6 .see{ font-size: 1.4em; display: flex; align-items: center; margin-left: 0em; margin-top: -1.3em; }
+.flex-6 .ol button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .op button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .ok button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .on button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .pl button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .pp button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .pk button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .pn button{ width: 125px; height: 30px; border: none;  background: linear-gradient(to right, #ee66cc, #fcc); color: #000; margin-top: 1em; cursor: pointer; border-radius: 20px 0; position: relative; transition: all .6s; }
+.flex-6 .ol button:hover{ border-radius: 0 20px; }
+.flex-6 .op button:hover{ border-radius: 0 20px; }
+.flex-6 .ok button:hover{ border-radius: 0 20px; }
+.flex-6 .on button:hover{ border-radius: 0 20px; }
+.flex-6 .pl button:hover{ border-radius: 0 20px; }
+.flex-6 .pp button:hover{ border-radius: 0 20px; }
+.flex-6 .pk button:hover{ border-radius: 0 20px; }
+.flex-6 .pn button:hover{ border-radius: 0 20px; }
+.flex-6 .ol button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .op button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .ok button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .on button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .pl button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .pp button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .pk button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .pn button::before{ content: ""; position: absolute; top: 0; left: 0; background: linear-gradient(to right, #fcc, #e44); width: 100%; height: 100%; filter: blur(32px); transform: scale(0.9, 0.8) translateY(20px); z-index: -1; opacity: 0; transition: all .6s; }
+.flex-6 .ol button:hover::before{ opacity: 1; }
+.flex-6 .op button:hover::before{ opacity: 1; }
+.flex-6 .ok button:hover::before{ opacity: 1; }
+.flex-6 .on button:hover::before{ opacity: 1; }
+.flex-6 .pl button:hover::before{ opacity: 1; }
+.flex-6 .pp button:hover::before{ opacity: 1; }
+.flex-6 .pk button:hover::before{ opacity: 1; }
+.flex-6 .pn button:hover::before{ opacity: 1; }
+.flex-6 p{display: inline-block; color: green; font-weight: 500; position: relative; top: 5px;}
+.flex-6 span{text-decoration: line-through; color: #f10; position: relative; top: 5px;}
+
+.flex-10{ background-color: #000; color: #fff; display: flex; justify-content: center; font-size: 18px; font-weight: 300; height: 5em; margin-top: 2em; }
+.flex-10 a{ display: flex; justify-content: center; padding: 2px; color: #fff; text-decoration: none; }
+
+.btn{ width: 45px; height: 35px; border: 2px solid; color: #fff; background: #000;  font-size: 16px; border-radius: 10px; margin-top: 23px; }
+.top{ position: fixed; right: 10px; bottom: 10px; background: #000; display: none;}
+.btn-primary{ width: 150px; height: 40px; transform: translate(100%);}
+.btn-secondary{ width: 150px; height: 40px; transform: translate(388%);}
+#btn-back-to-top { position: fixed; bottom: 20px; right: 20px; display: none;}
+
+.flex-14 h2{ margin-top: 4em; }
+.flex-14 h2 a{ color: #000; }
+.flex-14 p{ margin-left: 2.2em; margin-top: -1em; }
+.flex-14 h3{ margin-top: 1em; font-weight: 500; font-size: 12px;}
+.flex-14 i{ position: relative; top: 8px; padding-top: 10px; }
+.flex-14 span{ font-size: 15px; position: relative; top: 8px; text-transform: none; }
+.flex-14 #we{ color: #7ac200; }
+.flex-14 h4{  margin-top: 5em; transform: translate(25%); }
+.flex-14 nav ul{ display: flex; flex-direction: column; list-style: none; }
+.flex-14 nav ul li{ transform: translate(17%); }
+.flex-14 nav ul li a{ color: #000; text-decoration: none; }
+.flex-14 nav ul li a:hover{ color: rgb(220, 46, 46); } 
+.flex-14 nav ul li a::after{ content: ''; display: block; height: 0.20em; width: 0; background: rgba(255, 0, 0, 0.73); transition: all 0.5s; }
+.flex-14 nav ul li a:hover::after{ width: 100%; }
